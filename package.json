@@ -2,9 +2,9 @@
   "name": "Community Bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node Index.js"
   },
   "engines": {
     "node": "12.x"
