@@ -3,7 +3,6 @@ module.exports = ({
   code: `$giveRoles[$findUser[$message[1]];$findRole[$getServerVar[mute]]]
 $title[Muted $userTag[$findUser[$message[1]]]]
 $description[**$username** **has muted** $userTag[$findUser[$message[1]]]
-$if[$message[2]!=]
 **Reason:** $message[2]]
 $color[RANDOM]
 $onlyIf[$roleExists[$findRole[$getServerVar[mute]]]==true;<@$authorID>,**⛔ Please set a mute role first!!**]
