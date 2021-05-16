@@ -2,7 +2,7 @@ module.exports = ({
   name: "ui",
   aliases: ["user","whois","userinfo"],
   code: `$title[USER INFO]
-$addField[> Status:;$status[$get[user];no]
+$addField[> Status:;$status[$get[user]];no]
 $addField[> Platform:;$replaceText[$replaceText[$replaceText[$replaceText[$platform[$get[user]];none;<a:wrong:842648734171922443> **\`Offline\`**];web;🌐 **\`Web\`**];mobile;📱 **\`Mobile\`**];desktop;🖥 **\`PC\`**];no]
 $addField[> Hoisted Role:;<@&$hoistedRole[$get[user]]>;no]
 $addField[> Highest Role:;<@&$highestRole[$get[user]]>;no]
