@@ -1,9 +1,9 @@
 module.exports = ({
   name: "ui",
   aliases: ["user","whois","userinfo"],
-  code: `$title[USER INFO]
-$addField[> Status:;$status[$get[user]];no]
-$addField[> Platform:;$replaceText[$replaceText[$replaceText[$replaceText[$platform[$get[user]];none;<a:wrong:842648734171922443> **\`Offline\`**];web;🌐 **\`Web\`**];mobile;📱 **\`Mobile\`**];desktop;🖥 **\`PC\`**];no]
+  code: `$title[ℹ️ USER INFO]
+$addField[> Status:;$toLocaleUppercase[$status[$get[user]]];no]
+$addField[> Platform:;$replaceText[$replaceText[$replaceText[$replaceText[$platform[$get[user]];none;🚫 **\`Offline\`**];web;🌐 **\`Web\`**];mobile;📱 **\`Mobile\`**];desktop;🖥 **\`PC\`**];no]
 $addField[> Hoisted Role:;<@&$hoistedRole[$get[user]]>;no]
 $addField[> Highest Role:;<@&$highestRole[$get[user]]>;no]
 $addField[> Roles [$userRoleCount[$get[user]]];$replaceText[$replaceText[$checkCondition[$get[role]!=];true;$get[role]];false;**\`There is no roles to be listed!!\`**];no]
