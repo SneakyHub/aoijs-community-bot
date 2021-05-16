@@ -4,7 +4,7 @@ module.exports = ({
   code: `$title[My Stats]
 $description[**• Name:** **\`$username[$clientID]\`**
 **• ID:** **\`$clientID\`**
-**• Owner:** **\`$userTag[$botOwnerID\`**
+**• Owner:** **\`$userTag[$botOwnerID]\`**
 **• Prefix:** \"**\`$getServerVar[prefix]\`**\"
 **• Server:** **\`$serverCount\`**
 **• Number of users:** **\`$allMembersCount\`**
