@@ -1,6 +1,7 @@
 module.exports = ({
     name: "refresh",
     aliases: "reload",
-    description: "reloads all the commands!!",
+    usage: "\`+refresh\`",
+    description: "Reloads all the commands!!",
     code: `$updateCommands Successfully updated all the commands!`
 });
