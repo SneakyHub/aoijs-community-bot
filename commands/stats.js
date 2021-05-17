@@ -1,6 +1,8 @@
 module.exports = ({
   name: "botstats",
   aliases: ["bot","stats"],
+  usage: "\`+botstats\`",
+  description: "Shows all info of the bot.",
   code: `$title[My Stats]
 $addField[> __Package Info__:;**- aoi.js:** **\`v$packageVersion\`**
 **- dbdjs.db:** **\`$djsEval[require('dbdjs.db').version;yes]\`**
