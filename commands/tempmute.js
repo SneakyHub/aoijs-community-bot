@@ -1,5 +1,7 @@
 module.exports = ({
     name: "tempmute",
+    usage: "\`+tempmute <user> <time>\`",
+    description: "Mutes the specified user temporarily for the time specified.",
     code: `$channelSendMessage[$channelID;<@$findUser[$message[1]]>, I unmuted you, time's up]
 $takeRoles[$findUser[$message[1]];$findRole[$getServerVar[mute]]]
 $wait[$replaceText[$replaceText[$checkCondition[$message[2]==];true;24d];false;$message[2]]]
