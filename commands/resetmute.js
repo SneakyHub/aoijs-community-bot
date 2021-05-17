@@ -1,6 +1,6 @@
 module.exports = ({
     name: "resetmute",
-    usage: "\`+resetmute\`,
+    usage: "\`+resetmute\`",
     description: "Resets the mute system of the server.",
     code: `$setServerVar[mute;]
 $title[Reset MuteRole]
