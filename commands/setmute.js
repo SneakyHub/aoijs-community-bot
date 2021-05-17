@@ -1,5 +1,7 @@
 module.exports = ({
     name: "setmuterole",
+    usage: "\`+setmuterole <role>\`",
+    description: "Sets the specified role as the muterole of the server.",
     code: `$setServerVar[mute;$findRole[$message]]
 $title[Mute Role Set!!]
 $description[$username set <@&$findRole[$message]> as the mute role!!]
