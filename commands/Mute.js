@@ -1,5 +1,7 @@
 module.exports = ({
   name: "mute",
+  usage: "\`+mute <user> (reason)\`",
+  description: "Mutes the specified user. Reason is optional.",
   code: `$giveRoles[$findUser[$message[1]];$findRole[$getServerVar[mute]]]
 $title[Muted $userTag[$findUser[$message[1]]]]
 $description[**$username** **has muted** $userTag[$findUser[$message[1]]]
