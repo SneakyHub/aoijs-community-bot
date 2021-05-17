@@ -1,5 +1,6 @@
 module.exports = ({
     name: "serverinfo",
+    usage: "\`+serverinfo\`",
     description: "Shows the info of the current server",
     aliases: "si",
     code: `$title[Info of $serverName]
