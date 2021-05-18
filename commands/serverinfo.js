@@ -4,7 +4,7 @@ module.exports = ({
     description: "Shows the info of the current server",
     aliases: "si",
     code: `$title[Info of $serverName]
-$replaceText[$replaceText[$checkCondition[$serverIcon!=null];true;$thumbnail[$serverIcon]];false;]
+$thumbnail[$replaceText[$serverIcon;null;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD72SS-ObdahMJamnwVLjdBYW4tKaJBuh88Q&usqp=CAU]]
 $footer[Requested by $userTag[$authorID];$authorAvatar]
 $addTimestamp
 $color[RANDOM]
