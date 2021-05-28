@@ -2,6 +2,7 @@ module.exports = ({
 name: "eval",
 usage: "+eval <code>",
 description: "Evaluates the discord.js codes. Only the developers of the bot can use it!!",
+category: "Developer",
 code: `$addField[OUTPUT;\`\`\`kt
 $djsEval[$message;yes]\`\`\`;yes]
 $addField[INPUT;\`\`\`kt
