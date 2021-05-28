@@ -1,5 +1,8 @@
 module.exports = ({
     name: "suggest-reset",
+    usage: "suggest-reset",
+    description: "Resets the suggestion system.",
+    category: "Moderation",
     code: `$setServerVar[sc;0]
 $resetUserVar[smsg]
 $setServerVar[schan;]
