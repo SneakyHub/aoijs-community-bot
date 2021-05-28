@@ -1,5 +1,8 @@
 module.exports = ({
  name: "suggest",
+ usage: "suggest <suggestion>",
+ description: "Posts a suggestion to the default suggestion channel.",
+ category: "General",
  code: `$setServerVar[sc;$sum[$getServerVar[sc];1]]
 $setUserVar[smsg;$splitText[1];$sum[$getServerVar[sc];1]]
 $textSplit[$channelSendMessage[$getServerVar[schan];{author:$userTag[$authorID]:$authorAvatar}{field:**Suggestion #$sum[$getServerVar[sc];1]**:
