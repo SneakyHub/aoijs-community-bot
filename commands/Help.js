@@ -12,7 +12,7 @@ $let[help;> **Bot Info:**\n**\`$get[p]$djsEval[client.bot_commands.filter(x=>x.c
 > **Moderation:**\n**\`$get[p]$djsEval[client.bot_commands.filter(x=>x.category =="Moderation").map(x=>x.name).join(",$get[p]");yes]\`**
 > **Developer:**\n**\`$get[p]$djsEval[client.bot_commands.filter(x=>x.category =="Developer").map(x=>x.name).join(",$get[p]");yes]\`**
 
-For seeing more info of a specific command type $get[p]help (command name).]
+For seeing more info of a specific command type **\`$get[p]help (command name)\`**.]
 $let[cmdn;$replaceText[$replaceText[$checkCondition[$commandInfo[$message;name]!=];true;$get[cmn]];false;ERROR]
 $let[cmd;$replaceText[$replaceText[$checkCondition[$commandInfo[$message;name]!=];true;$get[cm]];false;**No commands found with that name!!**]
 $let[cmn;> **$commandInfo[$message;name] Command Info**]
