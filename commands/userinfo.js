@@ -3,8 +3,9 @@ module.exports = ({
   aliases: ["user","whois","userinfo"],
   usage: "\`+ui (user)\`",
   description: "Shows the info of the specified user or if not specified shows your userinfo.",
+  category: "Moderation",
   code: `$title[ℹ️ USER INFO]
-$addField[> Status:;$toLocaleUppercase[$status[$get[user]]];no]
+$addField[> Status:;$toUppercase[$status[$get[user]]];no]
 $addField[> Platform:;$replaceText[$replaceText[$replaceText[$replaceText[$platform[$get[user]];none;🚫 **\`Offline\`**];web;🌐 **\`Web\`**];mobile;📱 **\`Mobile\`**];desktop;🖥 **\`PC\`**];no]
 $addField[> Hoisted Role:;<@&$hoistedRole[$get[user]]>;no]
 $addField[> Highest Role:;<@&$highestRole[$get[user]]>;no]
