@@ -1,7 +1,8 @@
 module.exports = ({
 name: "exec",
-usage: "**\`+exec <cmd>\`**",
+usage: "\`+exec <cmd>\`",
 description: "Executes commands in the console.It is useful for installing new package without restart. It is also limited to only developers of the bot!!",
+category: "Developer",
 code: `$title[Command Executed]
 $addField[OUTPUT:;\`\`\`kt
 $exec[$message]\`\`\`;yes]
