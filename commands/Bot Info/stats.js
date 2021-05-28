@@ -18,7 +18,8 @@ $addField[> __CPU INFO__:;**- CPU Usage:** **\`$cpu%\/100%\`**
 **- OS:** **\`$djsEval[require('os').platform();yes]\`**;yes]
 $addField[> __Normal Stats__:;**• Name:** **\`$username[$clientID]\`**
 **• ID:** **\`$clientID\`**
-**• Owner:** **\`$userTag[746113176885657701], $userTag[682592010661527565], $userTag[716761186812821604] and $userTag[819586427968552971]\`**
+**• Owner:** **\`$userTag[746113176885657701]\`**
+**• Contributor:** **\`$userTag[742945200082780160]\`**
 **• Prefix:** \"**\`$getServerVar[prefix]\`**\"
 **• Server:** **\`$serverCount\`**
 **• Number of users:** **\`$allMembersCount\`**
