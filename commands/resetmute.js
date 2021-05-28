@@ -2,6 +2,7 @@ module.exports = ({
     name: "resetmute",
     usage: "\`+resetmute\`",
     description: "Resets the mute system of the server.",
+    category: "Moderation",
     code: `$setServerVar[mute;]
 $title[Reset MuteRole]
 $description[**$userTag[$authorID]** has reset the mute role of this server!!]
