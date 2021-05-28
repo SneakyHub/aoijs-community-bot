@@ -2,6 +2,7 @@ module.exports = ({
   name: "unmute",
   usage: "\`+unmute <user> (reason)\`",
   description: "Unmutes the specified user.",
+  category: "Moderation",
   code: `$takeRoles[$findUser[$message[1]];$findRole[$getServerVar[mute]]]
 $title[UnMuted $userTag[$findUser[$message[1]]]]
 $description[**$username** **has unmuted** $userTag[$findUser[$message[1]]]
