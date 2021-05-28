@@ -15,12 +15,11 @@ $let[help;> **Bot Info:**\n**\`$get[p]$djsEval[client.bot_commands.filter(x=>x.c
 For seeing more info of a specific command type $get[p]help (command name).]
 $let[cmdn;$replaceText[$replaceText[$checkCondition[$commandInfo[$message;name]!=];true;$get[cmn]];false;ERROR]
 $let[cmd;$replaceText[$replaceText[$checkCondition[$commandInfo[$message;name]!=];true;$get[cm]];false;**No commands found with that name!!**]
-$let[cmn;> **$commandInfo[$message;name] Info**]
-$let[cm;**Aliases**: $replaceText[$replaceText[$checkCondition[$commandInfo[$message;aliases]!=];true;$commandInfo[$message;aliases]];false;No aliases]
-
-**Usage**: $commandInfo[$message;usage]
-
-**Description**: \`$commandInfo[$message;description]\`]
+$let[cmn;> **$commandInfo[$message;name] Command Info**]
+$let[cm;> **Aliases**:\n$replaceText[$replaceText[$checkCondition[$commandInfo[$message;aliases]!=];true;$commandInfo[$message;aliases]];false;No aliases]
+> **Usage**:\n$commandInfo[$message;usage]
+> **Description**:\n**\`$commandInfo[$message;description]\`**
+> **Category**:\n**\`$commandInfo[$message;category]\`**]
 $let[p;$getServerVar[prefix]]
 $color[RANDOM]
 $addTimestamp
