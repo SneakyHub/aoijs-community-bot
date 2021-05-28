@@ -1,5 +1,8 @@
 module.exports = ({
     name: "reply",
+    usage: "reply <sugestion number> <reply>",
+    description: "Replies the specified suggestion.",
+    category: "Moderation",
     code: `$sendDM[$findUser[$get[dm];no];<@$findUser[$get[dm]]>{field:$get[su]:$getEmbed[$getServerVar[schan];$getUserVar[smsg;$message[1]];fvalue]:no}{field:**SneakyHub**:**\`\`\`\n$messageSlice[1]\n\`\`\`**:no}{footer:SneakyHub Commented on your suggestion}{thumbnail:$serverIcon}{color:RANDOM}]
 $let[su;$getEmbed[$getServerVar[schan];$getUserVar[smsg;$message[1]];field]]
 $let[dm;$findUser[$getEmbed[$getServerVar[schan];$getUserVar[smsg;$message[1]];author]]]
