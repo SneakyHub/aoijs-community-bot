@@ -1,8 +1,7 @@
 # aoijs-community-bot
 SneakyHub's official community discord bot written in aoi.js
 
-
-#To-Do-List
+# To-Do-List
 - Welcome message
 - Warning system
 - Invite Tracking ( do this 1st )
