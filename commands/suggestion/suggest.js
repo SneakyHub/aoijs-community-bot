@@ -14,6 +14,7 @@ $message\`\`\`**:yes}
 $addCmdReactions[✅]
 $sendMessage[Suggestion Posted!;no]
 $cooldown[5m;**⛔ It looks like you suggested within 5 min. Please wait for \`%time%\` to make another suggestion!!**]
+$onlyIfMessageContains[$channelPermissionsFor[$getServerVar[schan];$clientID];Send Messages;Embed Links;Read Message History;**⛔ I dont have permissions to post the suggestion. Please make sure to give permission in the suggestion channel!!**]
 $onlyIf[$message!=;**⛔ You must specify the suggestion!!**]
 $onlyIf[$getServerVar[schan]!=;**⛔ You need to set a suggestion channel first!!**]`
 })
