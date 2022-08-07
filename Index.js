@@ -1,50 +1,28 @@
 const Aoijs = require('aoi.js');
-const bot = new Aoijs.Bot({
-	sharding: false,
-	shardAmount: 2, 
-	mobile: false, 
-	token: "the token",
-	prefix: ["$getServerVar[prefix]"],
-	fetchInvites: true
-});
+const config = require('./configs/config.json')
+const bot = new aoijs.Bot({
+    token: config.token,
+    prefix: "$getServerVar[prefix]",
+    intents: "all"
+})
 
-process.setMaxListeners(50);
+//server only
+bot.onMessage({
+    guildOnly: true
+})
 
-
-bot.onReactionAdd();
-bot.onReactionRemove();
-bot.onLeave();
-bot.onJoined();
-bot.onGuildJoin();
-bot.onGuildLeave();
-bot.onBanAdd();
-bot.onInviteCreate();
-bot.onChannelDelete();
-bot.onChannelUpdate();
-bot.onChannelCreate();
-bot.onRoleUpdate();
-bot.onRoleDelete();
-bot.onRoleCreate();
-bot.onBanRemove();
-bot.onMessage();
-bot.onMessageUpdate();
-bot.onUserUpdate();
-bot.onMessageDelete();
-bot.onVoiceStateUpdate();
-bot.onMemberUpdate();
 //commands
-bot.loadCommands('./commands/');
+
+    const loader = new aoijs.LoadCommands(bot);
+    loader.load(bot.cmd,`./cmds/`)
 
 //status
 bot.status({
-	text: 'Updating..',
+	text: 'With all of the members of sneakyhub',
 	type: 'PLAYING',
-	status: 'dnd',
-	time: 60
+	time: 12
 });
 
 bot.variables({
-	prefix: '+'
+	prefix: 'SNH!'
 });
-
-console.log('Token');
